@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: burlywood;
+    color: black;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:40px;
+}
+.container .pelicula{
+    text-align: center;
+}
+.container .pelicula .titulo{
+    font-size: 16px;
+    font-weight: 600;
+}
+.container .pelicula .poster{
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.paginacion{
+    position: fixed;
+    bottom: 0;
+    background: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    background: black;
+    color: beige;
+    border-radius: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    transition: .3s ease all;
+
+}
+
+.paginacion button:hover{
+    background: rgb(54, 92, 30);
+}
